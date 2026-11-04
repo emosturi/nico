@@ -1,0 +1,151 @@
+# Homepage — contexto
+
+Fuente de verdad del perfil. Lo que esté en `PENDIENTE` no se publica ni se completa por inferencia.
+
+## Persona
+
+- Nombre: Nicolás Salazar Albistur
+- Rol: Desarrollador y analista de datos
+- Frase: Recorro datos y construyo las piezas para trabajar con ellos.
+- Usuario de GitHub: emosturi
+- Perfil: https://github.com/emosturi
+- En GitHub el perfil público figura como Emos Turi, bio "web developer", ubicación Chile, cuenta desde 2016. El sitio usa el nombre completo de arriba.
+- Contacto previsto: el@nicosalazar.dev
+- El buzón todavía no existe. No se muestra hasta que Nicolás confirme que el correo ya recibe mensajes.
+
+## Qué se siente al entrar
+
+La página es un pueblo de día, visto desde arriba. El visitante mueve un avatar por caminos de arena entre pasto y agua. Cada edificio es una parte del perfil. No hay combate, inventario ni criaturas: el mapa solo sirve para llegar a la información.
+
+El color es alto y limpio (cielo claro, pasto vivo, camino cálido, un acento coral). La ilustración es moderna, no de consola antigua. Quien prefiera no ver movimiento recorre las mismas cinco secciones en una página quieta.
+
+## Secciones
+
+### Plaza — presentación
+
+Nombre completo, rol y la frase. Nada más en el primer pantallazo.
+
+### Taller — trabajos
+
+Fichas armadas solo con lo que dice el repositorio público. Sin métricas ni rol de equipo que el repo no cuente.
+
+```
+titulo: Quadrivium
+problema: Hace falta practicar matemática con ejercicios distintos según nivel y tema.
+aporte: Aplicación que arma sesiones de ejercicios (matemática básica, álgebra, geometría, cálculo, estadística e informática). El frontend muestra los enunciados con MathJax. La API en FastAPI los genera con mathgenerator.
+herramientas: [Python, FastAPI, Uvicorn, Pydantic, JavaScript, HTML, CSS, MathJax, Netlify, Render]
+enlace: https://github.com/emosturi/Quadrivium
+```
+
+```
+titulo: Clio
+problema: Los formularios PDF de rentas vitalicias piden datos del afiliado y hay que saber qué valor va en cada campo.
+aporte: Script en Python que recorre los PDF y deja un inventario de campos en CSV (PyMuPDF y pypdf). El documento del repo define un mapeo con aprendizaje automático; ese modelo todavía no está implementado en el código.
+herramientas: [Python, PyMuPDF, pypdf, CSV]
+enlace: https://github.com/emosturi/clio_model
+```
+
+```
+titulo: Landing de asesor de pensiones
+problema: Un asesor de pensiones necesita una página de aterrizaje y un blog.
+aporte: Página en HTML publicada en el repositorio landing_page.
+herramientas: [HTML]
+enlace: https://github.com/emosturi/landing_page
+```
+
+```
+titulo: Sunrot
+problema: Contar, como juego de estrategia en tiempo real, una historia de seres subterráneos y humanos.
+aporte: Proyecto 2D en Godot, con escenas, tilemaps y assets propios del repo.
+herramientas: [Godot, GDScript]
+enlace: https://github.com/emosturi/sunrot
+```
+
+```
+titulo: The Moniac
+problema: Llevar las finanzas personales en una aplicación web.
+aporte: App descrita en el repositorio como personal finance app, iniciada con Create React App.
+herramientas: [JavaScript, React, HTML, CSS]
+enlace: https://github.com/emosturi/the_moniac
+```
+
+Otras piezas públicas, de ejercicio o de curso. No entran al taller como trabajos:
+
+- `haceres` — todo en JavaScript
+- `booklist_netlify` — lista de libros con Create React App, pensada para Netlify
+- `portfolio` y `emosturi.github.io` — portafolios anteriores (React y pruebas de Microverse)
+- `gingergirl` — juego de canvas siguiendo el tutorial de Chris Courses
+- `gdscript` — escena Godot con jugador y enemigo, del estilo del primer juego 2D del motor
+- `fifty-bird` y `pong` — Lua, del curso CS50 de desarrollo de juegos
+- `monster-rolodex` — práctica de React del curso Zero to Mastery
+- `bike_shop` — notebooks del curso Data Science with Python de RMOTR
+- `amazon` — CSV de una tienda, compartidos para una clase de la escuela de comercio
+- `dog-cat-identifier` — la descripción dice que es código simple para aprender redes neuronales en Python; el repo no expone archivos legibles
+- `self-balancing-robot` — fork de un robot Arduino autoequilibrado, con control por teléfono e impresión 3D, basado en el proyecto de JJulio
+
+### Observatorio — habilidades
+
+El orden de los grupos se respeta en la página.
+
+Desarrollo de software:
+
+- Desarrollo de software
+- JavaScript
+- Python
+- HTML
+- CSS
+- SCSS
+- React
+- FastAPI
+- Godot y GDScript
+- Lua
+
+Diseño frontend:
+
+- Diseño frontend
+- Páginas estáticas en HTML
+- Interfaces con React, HTML y CSS
+- Composición de fórmulas con MathJax
+
+Análisis de datos:
+
+- Análisis de datos
+- Jupyter Notebook
+- CSV
+- Inventario de campos en formularios PDF
+- Diseño de un mapeo de campos con aprendizaje automático (documentado en Clio; el modelo no está en el código)
+
+Gamificación:
+
+- Gamificación
+- Juegos 2D en Godot
+- Juego de canvas en JavaScript
+- Ejercicios de juego en Lua
+- Sesiones de práctica por nivel y temática (Quadrivium)
+
+Electricidad:
+
+- Generación autónoma
+- Instalador off grid
+
+Electrónica:
+
+- Mecatrónica
+- Monitoreo remoto
+
+Electricidad y electrónica las declaró Nicolás. En los repositorios públicos el único rastro cercano es el fork `self-balancing-robot`.
+
+### Cabina — GitHub
+
+Se arma sola con el usuario `emosturi`.
+
+- Perfil: https://github.com/emosturi
+- Repos: los públicos más recientes, con nombre, descripción y lenguaje
+- Actividad: calendario de contribuciones cuando la API lo devuelva
+- Si la API falla, la cabina explica que la actividad no se pudo cargar y deja el enlace al perfil
+
+Lenguajes que hoy aparecen en los repos con código: JavaScript, Python, HTML, GDScript, Lua y Jupyter Notebook. Hay repos sin lenguaje detectado.
+
+### Buzón — contacto
+
+Dirección prevista: el@nicosalazar.dev. La sección no se muestra mientras el buzón no esté creado. Cuando Nicolás confirme que ya recibe mensajes, pasa a ser el único canal de contacto.

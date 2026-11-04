@@ -1,0 +1,19 @@
+---
+description: Identidad, tono y límites de contenido del portfolio
+alwaysApply: true
+---
+
+# Identidad
+
+Sitio de **Nicolás Salazar Albistur**, desarrollador y analista de datos.
+
+- Audiencia: quien contrata o colabora en producto, datos o ingeniería.
+- Tono: concreto y cercano. Una idea por frase. Sin superlativos ni métricas que no estén en `contexto/homepage.md`.
+- Idioma de la interfaz: español. Los nombres de herramientas quedan en su forma original (`Python`, `SQL`).
+- El encabezado muestra el nombre completo y el rol "Desarrollador y analista de datos".
+
+## Datos
+
+- La fuente de verdad del perfil es `contexto/homepage.md`.
+- Proyectos, empresas, métricas y el usuario de GitHub se leen de ahí.
+- Si un campo está vacío, la interfaz muestra ese vacío. No se inventa el dato.

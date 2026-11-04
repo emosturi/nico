@@ -1,0 +1,27 @@
+---
+description: Estructura de la homepage, trabajos, habilidades y GitHub
+alwaysApply: true
+---
+
+# Homepage
+
+Una sola página. El mapa es la navegación; el contenido vive en el DOM, en este orden:
+
+1. Presentación — nombre, rol y la frase del contexto.
+2. Trabajos — problema, aporte, herramientas y enlace. Sin piezas de relleno.
+3. Habilidades — los grupos de `contexto/homepage.md`, en ese orden.
+4. GitHub — actividad pública del usuario indicado en el contexto.
+5. Contacto — solo los canales cargados.
+
+Cada bloque tiene un encabezado real (`h1` una sola vez, luego `h2`) aunque visualmente se abra desde un edificio.
+
+## GitHub
+
+- Leer la API pública: `/users/{usuario}` y `/users/{usuario}/repos`. No scrapear el HTML de GitHub.
+- Mostrar el enlace al perfil, los repos públicos recientes y, si la fuente responde, el calendario de contribuciones.
+- Estados obligatorios: cargando, sin repos públicos, y error de red o de límite. El resto de la página sigue usable.
+- Sin tokens. Lo privado no se muestra.
+
+## Ficha de un trabajo
+
+Campos: `titulo`, `problema`, `aporte`, `herramientas`, `enlace`. Si falta `enlace`, la ficha no muestra un botón.
