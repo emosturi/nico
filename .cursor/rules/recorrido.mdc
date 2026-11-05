@@ -1,21 +1,22 @@
 ---
-description: Recorrido horizontal del personaje entre las secciones
+description: Mapa visto desde arriba y diálogo al llegar al edificio
 alwaysApply: true
 ---
 
 # Recorrido
 
-El mundo es horizontal y usa los tiles y sprites de `Pixel Crawler - Free Pack`. El personaje camina de una etapa a otra. Las etapas son las secciones, en este orden: Presentación, Trabajos, Habilidades, GitHub, Contacto.
+El mundo se ve desde arriba y usa los tiles y sprites de `Pixel Crawler - Free Pack`. Hay pasto, varios tipos de árboles, ríos con borde contra la tierra y cinco edificios, en este orden: Presentación, Trabajos, Habilidades, GitHub, Contacto. Cada edificio se arma por fuera con techo, muro, puerta y sombra de `Environment/Structures/Buildings`. El personaje es uno de los NPC de `Entities/Npc's`.
 
 ## Movimiento
 
-- El menú y las flechas izquierda y derecha mueven al personaje hasta la etapa elegida.
-- La flecha avanza o retrocede una etapa. El menú puede ir directo a cualquiera.
-- La etapa visible es la del personaje. El contenido de esa etapa está en el DOM.
+- El menú y las flechas izquierda y derecha llevan al personaje hasta el edificio de esa sección.
+- En el teléfono, deslizar a la izquierda o a la derecha hace el mismo recorrido.
+- Al llegar al edificio se abre un diálogo con el contenido de esa sección. Mientras camina, el diálogo está cerrado.
+- Arriba y abajo cambian el personaje. En el teléfono, el mismo cambio es deslizar arriba o abajo.
 - Contacto no publica `el@nicosalazar.dev` hasta que Nicolás confirme el buzón.
 - Sin puntaje, insignias ni celebración.
 
 ## Animación
 
-- El traslado se lee como una caminata hacia el lado.
-- Con `prefers-reduced-motion`, el cambio de etapa es instantáneo y no hay caminata.
+- El traslado se lee como una caminata sobre el mapa.
+- Con `prefers-reduced-motion`, el cambio de edificio es instantáneo y el diálogo se abre al llegar.

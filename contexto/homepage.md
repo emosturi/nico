@@ -15,11 +15,11 @@ Fuente de verdad del perfil. Lo que esté en `PENDIENTE` no se publica ni se com
 
 ## Qué se siente al entrar
 
-Un mundo horizontal armado con los tiles y sprites de `Pixel Crawler - Free Pack`. El primer pantallazo es el nombre, el rol y la frase, con el personaje en la etapa de presentación.
+Un mapa visto desde arriba, armado con los tiles y sprites de `Pixel Crawler - Free Pack`. Hay pasto, varios tipos de árboles, ríos con borde contra la tierra y un edificio por sección. Cada edificio se arma por fuera con techo, muro, puerta y sombra. El personaje, uno de los NPC, llega caminando al edificio y ahí se abre el diálogo con el contenido de esa sección.
 
-El menú y las flechas izquierda y derecha llevan al personaje de una etapa a otra: Trabajos, Habilidades, GitHub y Contacto. Cada etapa muestra solo el contenido de esa sección. El contacto no muestra la dirección hasta que el correo exista.
+El menú y las flechas izquierda y derecha lo llevan de un edificio a otro: Presentación, Trabajos, Habilidades, GitHub y Contacto. Arriba y abajo cambian el personaje. En el teléfono, deslizar a la izquierda o a la derecha camina, y deslizar arriba o abajo cambia el personaje. El contacto no muestra la dirección hasta que el correo exista.
 
-Quien prefiere menos movimiento cambia de etapa al instante, sin caminata.
+Quien prefiere menos movimiento cambia de edificio al instante, sin caminata. El diálogo igual se abre al llegar.
 
 ## Secciones
 

@@ -17,12 +17,13 @@
         <button type="button" data-stage="3">GitHub</button>
         <button type="button" data-stage="4">Contacto</button>
       </nav>
-      <p class="hint">Menú o flechas para cambiar de etapa.</p>
+      <p class="hint">Izquierda y derecha caminan. Arriba y abajo cambian el personaje. En el teléfono, desliza.</p>
+      <p class="skin" id="aspecto">Personaje: Campesina</p>
     </header>
 
     <div class="viewport">
       <canvas id="mundo" width="800" height="480" aria-hidden="true"></canvas>
-      <div class="track" id="track">
+      <div class="dialog" id="dialog">
         <section id="presentacion" aria-labelledby="nombre">
           <div class="card">
             <p class="kicker">Presentación</p>
@@ -32,7 +33,7 @@
           </div>
         </section>
 
-        <section id="trabajos" aria-labelledby="trabajos-titulo">
+        <section id="trabajos" aria-labelledby="trabajos-titulo" hidden>
           <div class="card">
             <h2 id="trabajos-titulo">Trabajos</h2>
             <p>Cinco piezas publicadas en GitHub.</p>
@@ -83,7 +84,7 @@
           </div>
         </section>
 
-        <section id="habilidades" aria-labelledby="habilidades-titulo">
+        <section id="habilidades" aria-labelledby="habilidades-titulo" hidden>
           <div class="card">
             <h2 id="habilidades-titulo">Habilidades</h2>
             <h3>Desarrollo de software</h3>
@@ -110,7 +111,7 @@
           </div>
         </section>
 
-        <section id="github" aria-labelledby="github-titulo">
+        <section id="github" aria-labelledby="github-titulo" hidden>
           <div class="card">
             <h2 id="github-titulo">GitHub</h2>
             <p>Repos públicos recientes de <a href="https://github.com/emosturi">emosturi</a>. El calendario de contribuciones está en el perfil.</p>
@@ -119,7 +120,7 @@
           </div>
         </section>
 
-        <section id="contacto" aria-labelledby="contacto-titulo">
+        <section id="contacto" aria-labelledby="contacto-titulo" hidden>
           <div class="card">
             <h2 id="contacto-titulo">Contacto</h2>
             <p>El recorrido termina acá. El correo se publica cuando el buzón esté activo.</p>
