@@ -34,36 +34,11 @@ const PEOPLE = [
   { name: "Maga", walk: "wizardRun", idle: "wizardRun", walkFrames: 6, idleFrames: 1, foot: 63 },
 ];
 const HOUSES = [
-  {
-    shadow: [0, 32, 80, 32],
-    wall: [0, 8, 72, 48],
-    roof: [0, 6, 128, 72],
-    door: [128, 25, 30, 46],
-  },
-  {
-    shadow: [0, 0, 79, 32],
-    wall: [208, 16, 80, 56],
-    roof: [128, 6, 128, 72],
-    door: [160, 25, 30, 46],
-  },
-  {
-    shadow: [80, 0, 48, 48],
-    wall: [0, 184, 128, 48],
-    roof: [0, 80, 128, 88],
-    door: [101, 29, 22, 40],
-  },
-  {
-    shadow: [0, 32, 80, 32],
-    wall: [0, 444, 104, 64],
-    roof: [144, 80, 96, 88],
-    door: [128, 25, 30, 46],
-  },
-  {
-    shadow: [0, 32, 80, 32],
-    wall: [320, 8, 96, 56],
-    roof: [0, 6, 128, 72],
-    door: [101, 29, 22, 40],
-  },
+  { wall: [0, 8, 96, 168], roof: [0, 6, 128, 71], door: [128, 27, 32, 48] },
+  { wall: [96, 8, 96, 168], roof: [128, 6, 128, 71], door: [160, 25, 32, 50] },
+  { wall: [192, 8, 96, 168], roof: [0, 6, 128, 71], door: [128, 27, 32, 48] },
+  { wall: [384, 8, 96, 168], roof: [128, 6, 128, 71], door: [160, 25, 32, 50] },
+  { wall: [480, 8, 96, 168], roof: [0, 6, 128, 71], door: [128, 27, 32, 48] },
 ];
 const TREES = [
   { sheet: "pine", sx: 3, sy: 1, sw: 45, sh: 47 },
@@ -265,32 +240,35 @@ function drawGround(tx, ty, dx, dy, now) {
   tile("floors", roll > 0.82 ? 2 : 1, roll > 0.94 ? 11 : 10, dx, dy);
 }
 
-function blit(sheet, rect, centerX, bottomY) {
+function piece(sheet, rect, left, top, k) {
   const image = images[sheet];
-  if (!image || !rect) return 0;
-  const [sx, sy, sw, sh] = rect;
-  const k = scale * 0.72;
-  const w = sw * k;
-  const h = sh * k;
-  ctx.drawImage(image, sx, sy, sw, sh, centerX - w / 2, bottomY - h, w, h);
-  return h;
+  if (!image || !rect) return;
+  ctx.drawImage(image, rect[0], rect[1], rect[2], rect[3], left, top, rect[2] * k, rect[3] * k);
 }
 
 function drawHouse(index, camX) {
   const house = HOUSES[index];
   const x = stand(index).x - camX;
   const foot = pathRow * tilePx;
-  const k = scale * 0.72;
-  if (house.shadow && images.shadows) {
-    const shadowH = house.shadow[3] * k;
+  const room = Math.max(tilePx * 4, foot - 6);
+  const k = Math.min(scale * 0.7, room / 230);
+  const wallW = house.wall[2] * k;
+  const wallH = house.wall[3] * k;
+  const left = x - wallW / 2;
+  const top = foot - wallH;
+  if (images.shadows) {
     ctx.save();
-    ctx.globalAlpha = 0.8;
-    blit("shadows", house.shadow, x, foot + shadowH * 0.62);
+    ctx.globalAlpha = 0.55;
+    piece("shadows", [0, 0, 80, 32], x - 40 * k, foot - 10 * k, k);
     ctx.restore();
   }
-  const wallH = blit("bwalls", house.wall, x, foot);
-  blit("props", house.door, x, foot);
-  blit("roofs", house.roof, x, foot - wallH + 10 * scale);
+  piece("bwalls", house.wall, left, top, k);
+  const door = house.door;
+  const sill = 112;
+  piece("props", door, left + (48 - door[2] / 2) * k, top + (sill - door[3]) * k, k);
+  const roof = house.roof;
+  const drop = 16;
+  piece("roofs", roof, x - (roof[2] * k) / 2, top + (drop - roof[3]) * k, k);
 }
 
 function drawTree(tree, camX) {
