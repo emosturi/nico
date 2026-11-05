@@ -15,17 +15,19 @@ Fuente de verdad del perfil. Lo que esté en `PENDIENTE` no se publica ni se com
 
 ## Qué se siente al entrar
 
-La página es un pueblo de día, visto desde arriba. El visitante mueve un avatar por caminos de arena entre pasto y agua. Cada edificio es una parte del perfil. No hay combate, inventario ni criaturas: el mapa solo sirve para llegar a la información.
+Un mundo horizontal armado con los tiles y sprites de `Pixel Crawler - Free Pack`. El primer pantallazo es el nombre, el rol y la frase, con el personaje en la etapa de presentación.
 
-El color es alto y limpio (cielo claro, pasto vivo, camino cálido, un acento coral). La ilustración es moderna, no de consola antigua. Quien prefiera no ver movimiento recorre las mismas cinco secciones en una página quieta.
+El menú y las flechas izquierda y derecha llevan al personaje de una etapa a otra: Trabajos, Habilidades, GitHub y Contacto. Cada etapa muestra solo el contenido de esa sección. El contacto no muestra la dirección hasta que el correo exista.
+
+Quien prefiere menos movimiento cambia de etapa al instante, sin caminata.
 
 ## Secciones
 
-### Plaza — presentación
+### Presentación
 
 Nombre completo, rol y la frase. Nada más en el primer pantallazo.
 
-### Taller — trabajos
+### Trabajos
 
 Fichas armadas solo con lo que dice el repositorio público. Sin métricas ni rol de equipo que el repo no cuente.
 
@@ -69,7 +71,7 @@ herramientas: [JavaScript, React, HTML, CSS]
 enlace: https://github.com/emosturi/the_moniac
 ```
 
-Otras piezas públicas, de ejercicio o de curso. No entran al taller como trabajos:
+Otras piezas públicas, de ejercicio o de curso. No se publican como trabajos:
 
 - `haceres` — todo en JavaScript
 - `booklist_netlify` — lista de libros con Create React App, pensada para Netlify
@@ -83,7 +85,7 @@ Otras piezas públicas, de ejercicio o de curso. No entran al taller como trabaj
 - `dog-cat-identifier` — la descripción dice que es código simple para aprender redes neuronales en Python; el repo no expone archivos legibles
 - `self-balancing-robot` — fork de un robot Arduino autoequilibrado, con control por teléfono e impresión 3D, basado en el proyecto de JJulio
 
-### Observatorio — habilidades
+### Habilidades
 
 El orden de los grupos se respeta en la página.
 
@@ -135,17 +137,17 @@ Electrónica:
 
 Electricidad y electrónica las declaró Nicolás. En los repositorios públicos el único rastro cercano es el fork `self-balancing-robot`.
 
-### Cabina — GitHub
+### GitHub
 
 Se arma sola con el usuario `emosturi`.
 
 - Perfil: https://github.com/emosturi
 - Repos: los públicos más recientes, con nombre, descripción y lenguaje
 - Actividad: calendario de contribuciones cuando la API lo devuelva
-- Si la API falla, la cabina explica que la actividad no se pudo cargar y deja el enlace al perfil
+- Si la API falla, la sección explica que la actividad no se pudo cargar y deja el enlace al perfil
 
 Lenguajes que hoy aparecen en los repos con código: JavaScript, Python, HTML, GDScript, Lua y Jupyter Notebook. Hay repos sin lenguaje detectado.
 
-### Buzón — contacto
+### Contacto
 
-Dirección prevista: el@nicosalazar.dev. La sección no se muestra mientras el buzón no esté creado. Cuando Nicolás confirme que ya recibe mensajes, pasa a ser el único canal de contacto.
+Dirección prevista: el@nicosalazar.dev. El paso existe en la barra de avance y no publica la dirección mientras el buzón no esté creado. Cuando Nicolás confirme que ya recibe mensajes, esa dirección pasa a ser el único canal de contacto.

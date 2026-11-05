@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Homepage
 
-Una sola página. El mapa es la navegación; el contenido vive en el DOM, en este orden:
+Una sola página editorial. El contenido vive en el DOM, en este orden:
 
 1. Presentación — nombre, rol y la frase del contexto.
 2. Trabajos — problema, aporte, herramientas y enlace. Sin piezas de relleno.
@@ -13,7 +13,7 @@ Una sola página. El mapa es la navegación; el contenido vive en el DOM, en est
 4. GitHub — actividad pública del usuario indicado en el contexto.
 5. Contacto — solo los canales cargados.
 
-Cada bloque tiene un encabezado real (`h1` una sola vez, luego `h2`) aunque visualmente se abra desde un edificio.
+Cada bloque tiene un encabezado real (`h1` una sola vez, luego `h2`). El mundo y el movimiento están en `.cursor/rules/recorrido.mdc`.
 
 ## GitHub
 

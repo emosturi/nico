@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nicolás Salazar Albistur — Desarrollador y analista de datos</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <a class="skip" href="#presentacion">Saltar al contenido</a>
+    <header class="bar">
+      <nav aria-label="Etapas">
+        <button type="button" data-stage="0">Presentación</button>
+        <button type="button" data-stage="1">Trabajos</button>
+        <button type="button" data-stage="2">Habilidades</button>
+        <button type="button" data-stage="3">GitHub</button>
+        <button type="button" data-stage="4">Contacto</button>
+      </nav>
+      <p class="hint">Menú o flechas para cambiar de etapa.</p>
+    </header>
+
+    <div class="viewport">
+      <canvas id="mundo" width="800" height="480" aria-hidden="true"></canvas>
+      <div class="track" id="track">
+        <section id="presentacion" aria-labelledby="nombre">
+          <div class="card">
+            <p class="kicker">Presentación</p>
+            <h1 id="nombre">Nicolás Salazar Albistur</h1>
+            <p class="role">Desarrollador y analista de datos</p>
+            <p>Recorro datos y construyo las piezas para trabajar con ellos.</p>
+          </div>
+        </section>
+
+        <section id="trabajos" aria-labelledby="trabajos-titulo">
+          <div class="card">
+            <h2 id="trabajos-titulo">Trabajos</h2>
+            <p>Cinco piezas publicadas en GitHub.</p>
+
+            <article class="work">
+              <h3>Quadrivium</h3>
+              <p><span>Problema</span> Hace falta practicar matemática con ejercicios distintos según nivel y tema.</p>
+              <p><span>Aporte</span> Aplicación que arma sesiones de ejercicios (matemática básica, álgebra, geometría, cálculo, estadística e informática). El frontend muestra los enunciados con MathJax. La API en FastAPI los genera con mathgenerator.</p>
+              <ul class="chips">
+                <li>Python</li><li>FastAPI</li><li>Uvicorn</li><li>Pydantic</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>MathJax</li><li>Netlify</li><li>Render</li>
+              </ul>
+              <p><a href="https://github.com/emosturi/Quadrivium">Ver repositorio</a></p>
+            </article>
+
+            <article class="work">
+              <h3>Clio</h3>
+              <p><span>Problema</span> Los formularios PDF de rentas vitalicias piden datos del afiliado y hay que saber qué valor va en cada campo.</p>
+              <p><span>Aporte</span> Script en Python que recorre los PDF y deja un inventario de campos en CSV (PyMuPDF y pypdf). El documento del repo define un mapeo con aprendizaje automático; ese modelo todavía no está implementado en el código.</p>
+              <ul class="chips">
+                <li>Python</li><li>PyMuPDF</li><li>pypdf</li><li>CSV</li>
+              </ul>
+              <p><a href="https://github.com/emosturi/clio_model">Ver repositorio</a></p>
+            </article>
+
+            <article class="work">
+              <h3>Landing de asesor de pensiones</h3>
+              <p><span>Problema</span> Un asesor de pensiones necesita una página de aterrizaje y un blog.</p>
+              <p><span>Aporte</span> Página en HTML publicada en el repositorio landing_page.</p>
+              <ul class="chips"><li>HTML</li></ul>
+              <p><a href="https://github.com/emosturi/landing_page">Ver repositorio</a></p>
+            </article>
+
+            <article class="work">
+              <h3>Sunrot</h3>
+              <p><span>Problema</span> Contar, como juego de estrategia en tiempo real, una historia de seres subterráneos y humanos.</p>
+              <p><span>Aporte</span> Proyecto 2D en Godot, con escenas, tilemaps y assets propios del repo.</p>
+              <ul class="chips"><li>Godot</li><li>GDScript</li></ul>
+              <p><a href="https://github.com/emosturi/sunrot">Ver repositorio</a></p>
+            </article>
+
+            <article class="work">
+              <h3>The Moniac</h3>
+              <p><span>Problema</span> Llevar las finanzas personales en una aplicación web.</p>
+              <p><span>Aporte</span> App descrita en el repositorio como personal finance app, iniciada con Create React App.</p>
+              <ul class="chips"><li>JavaScript</li><li>React</li><li>HTML</li><li>CSS</li></ul>
+              <p><a href="https://github.com/emosturi/the_moniac">Ver repositorio</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section id="habilidades" aria-labelledby="habilidades-titulo">
+          <div class="card">
+            <h2 id="habilidades-titulo">Habilidades</h2>
+            <h3>Desarrollo de software</h3>
+            <ul class="chips">
+              <li>Desarrollo de software</li><li>JavaScript</li><li>Python</li><li>HTML</li><li>CSS</li><li>SCSS</li><li>React</li><li>FastAPI</li><li>Godot y GDScript</li><li>Lua</li>
+            </ul>
+            <h3>Diseño frontend</h3>
+            <ul class="chips">
+              <li>Diseño frontend</li><li>Páginas estáticas en HTML</li><li>Interfaces con React, HTML y CSS</li><li>Composición de fórmulas con MathJax</li>
+            </ul>
+            <h3>Análisis de datos</h3>
+            <ul class="chips">
+              <li>Análisis de datos</li><li>Jupyter Notebook</li><li>CSV</li><li>Inventario de campos en formularios PDF</li>
+            </ul>
+            <p class="note">Diseño de un mapeo de campos con aprendizaje automático, documentado en Clio. El modelo no está en el código.</p>
+            <h3>Gamificación</h3>
+            <ul class="chips">
+              <li>Gamificación</li><li>Juegos 2D en Godot</li><li>Juego de canvas en JavaScript</li><li>Ejercicios de juego en Lua</li><li>Sesiones de práctica por nivel y temática (Quadrivium)</li>
+            </ul>
+            <h3>Electricidad</h3>
+            <ul class="chips"><li>Generación autónoma</li><li>Instalador off grid</li></ul>
+            <h3>Electrónica</h3>
+            <ul class="chips"><li>Mecatrónica</li><li>Monitoreo remoto</li></ul>
+          </div>
+        </section>
+
+        <section id="github" aria-labelledby="github-titulo">
+          <div class="card">
+            <h2 id="github-titulo">GitHub</h2>
+            <p>Repos públicos recientes de <a href="https://github.com/emosturi">emosturi</a>. El calendario de contribuciones está en el perfil.</p>
+            <p id="github-status">Cargando actividad pública…</p>
+            <ul id="github-repos" class="repos"></ul>
+          </div>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-titulo">
+          <div class="card">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <p>El recorrido termina acá. El correo se publica cuando el buzón esté activo.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <p id="anuncio" class="live" aria-live="polite"></p>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

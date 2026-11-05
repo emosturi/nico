@@ -1,0 +1,21 @@
+---
+description: Recorrido horizontal del personaje entre las secciones
+alwaysApply: true
+---
+
+# Recorrido
+
+El mundo es horizontal y usa los tiles y sprites de `Pixel Crawler - Free Pack`. El personaje camina de una etapa a otra. Las etapas son las secciones, en este orden: Presentación, Trabajos, Habilidades, GitHub, Contacto.
+
+## Movimiento
+
+- El menú y las flechas izquierda y derecha mueven al personaje hasta la etapa elegida.
+- La flecha avanza o retrocede una etapa. El menú puede ir directo a cualquiera.
+- La etapa visible es la del personaje. El contenido de esa etapa está en el DOM.
+- Contacto no publica `el@nicosalazar.dev` hasta que Nicolás confirme el buzón.
+- Sin puntaje, insignias ni celebración.
+
+## Animación
+
+- El traslado se lee como una caminata hacia el lado.
+- Con `prefers-reduced-motion`, el cambio de etapa es instantáneo y no hay caminata.
